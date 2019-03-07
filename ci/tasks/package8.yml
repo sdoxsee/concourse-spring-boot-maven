@@ -7,10 +7,10 @@ image_resource:
     tag: "8"
 
 inputs:
-- name: source-code
+  - name: source-code
 
 caches:
-  - path: .m2/
+  - path: maven
 
 run:
   path: source-code/ci/tasks/package.sh
