@@ -9,5 +9,8 @@ image_resource:
 inputs:
 - name: source-code
 
+caches:
+  - path: .m2/
+
 run:
   path: source-code/ci/tasks/package.sh
