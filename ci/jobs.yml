@@ -1,11 +1,15 @@
 jobs:
-- name: package
+- name: package8
   plan:
   - get: source-code
     trigger: true
   - task: package8
     privileged: true
     file: source-code/ci/tasks/package8.yml
+- name: package11
+  plan:
+  - get: source-code
+    trigger: true
   - task: package11
     privileged: true
     file: source-code/ci/tasks/package11.yml
